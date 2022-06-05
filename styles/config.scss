@@ -1,0 +1,11 @@
+$fontFamilyOne: 'Montserrat', sans-serif;
+$brand_color_primary: #ffffff;
+$brand_color_secondary: #000000;
+
+//@mixins
+
+@mixin displayCenter($align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+}

@@ -1,0 +1,9 @@
+footer {
+  height: 80px;
+  background-color: $brand_color_secondary;
+  @include displayCenter(center, center);
+  .footer {
+    color: #ffff;
+    // text-align: center;
+  }
+}

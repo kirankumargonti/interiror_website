@@ -1,8 +1,12 @@
-import React from 'react'
+import React from "react"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <div className='footer'>
+        @copyright 2022 bn interior - All Rights Received
+      </div>
+    </footer>
   )
 }
 

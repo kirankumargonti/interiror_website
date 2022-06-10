@@ -1,4 +1,4 @@
-$fontFamilyOne: 'Montserrat', sans-serif;
+$fontFamilyOne: "Montserrat", sans-serif;
 $brand_color_primary: #ffffff;
 $brand_color_secondary: #000000;
 
@@ -8,4 +8,17 @@ $brand_color_secondary: #000000;
   display: flex;
   align-items: $align;
   justify-content: $justify;
+}
+
+// responsive breakpoints
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+@mixin mQ($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
 }

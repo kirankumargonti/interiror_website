@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {Autoplay, EffectCoverflow} from 'swiper'
+import Image from "next/image"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, EffectCoverflow } from "swiper"
 
 const Hero = () => {
   return (
@@ -11,18 +11,18 @@ const Hero = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
-        effect={'coverflow'}
+        effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
         spaceBetween={10}
         slidesPerView={1}
-        onSlideChange={() => console.log('slide change')}
+        onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <div className='image_container'>
             <Image
-              src='https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+              src='https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?autheo=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
               alt='Image 1'
               layout='fill'
               objectFit='cover'
@@ -30,8 +30,12 @@ const Hero = () => {
             />
             <div className='content_wrapper'>
               <div className='content'>
-                <h1>We design your Home</h1>
-                <h1>On Priority</h1>
+                <h1>Lets Make Your</h1>
+                <h1>Interior Better</h1>
+                <p>
+                  Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost un orthographic.
+                </p>
                 <button className='btn_brand'>Call US</button>
               </div>
             </div>

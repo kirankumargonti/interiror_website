@@ -1,7 +1,11 @@
 footer {
   // height: 100px;
   padding: 50px 0;
-  background-color: $brand_color_secondary;
+  background-image: url('/svg/waves.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
   .footer_wrapper {
     height: 100%;
     @include displayCenter(center, center);

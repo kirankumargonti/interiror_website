@@ -62,25 +62,25 @@ h6 {
   }
 }
 .container {
-  width: 100%;
+  max-width: 1320px;
   height: 100%;
   padding-right: calc(1.5rem * 0.5);
   padding-left: calc(1.5rem * 0.5);
   margin-right: auto;
   margin-left: auto;
-  @include mQ($sm) {
-    max-width: 540px;
-  }
-  @include mQ($md) {
-    max-width: 720px;
-  }
-  @include mQ($lg) {
-    max-width: 960px;
+  @include mQ($xxl) {
+    max-width: 1320px;
   }
   @include mQ($xl) {
     max-width: 1140px;
   }
-  @include mQ($xxl) {
-    max-width: 1320px;
+  @include mQ($lg) {
+    max-width: 960px;
+  }
+  @include mQ($md) {
+    max-width: 720px;
+  }
+  @include mQ($sm) {
+    max-width: 540px;
   }
 }

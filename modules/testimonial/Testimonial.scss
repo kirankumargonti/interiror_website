@@ -13,14 +13,16 @@
       rgba(45, 116, 213, 1) 11.2%,
       rgba(121, 137, 212, 1) 91.2%
     );
-    // height: 580px;
-    // width: 700px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
     padding: 40px;
+    @include mQ($sm){
+      width: 400px;
+      // width: 100%;
+    }
     .icon {
       width: 50px;
       height: 50px;

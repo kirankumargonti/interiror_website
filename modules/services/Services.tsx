@@ -16,6 +16,8 @@ const Services = () => {
       icon: <AiOutlineHome />,
       icon_bg: blobOne,
       text: 'Home Interior',
+      imageSrc:
+        'https://images.pexels.com/photos/3797991/pexels-photo-3797991.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       description:
         'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
     },
@@ -23,8 +25,9 @@ const Services = () => {
       id: useId(),
       icon: <HiOutlineOfficeBuilding />,
       icon_bg: blobTwo,
-
       text: 'Office Interior',
+      imageSrc:
+        'https://images.pexels.com/photos/2678468/pexels-photo-2678468.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       description:
         'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
     },
@@ -33,6 +36,8 @@ const Services = () => {
       icon: <GiPartyFlags />,
       icon_bg: blobThree,
       text: 'Party Interior',
+      imageSrc:
+        'https://images.pexels.com/photos/4997875/pexels-photo-4997875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       description:
         'You deserve a home that is functional and stylish, today. Don’t put it off until the kids are older or you have more time.',
     },
@@ -47,7 +52,7 @@ const Services = () => {
             perfect office environment for your team.
           </p>
         </div>
-        <div className='services_wrapper'>
+        {/* <div className='services_wrapper'>
           {servicesArray?.map((service) => (
             <div className='service_card' key={service?.id}>
               <div className='service_icon'>
@@ -60,7 +65,18 @@ const Services = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
+        {servicesArray?.map((service) => (
+          <div className='service_section' key={service?.id}>
+            <div className='service_section_left'>
+              <h3>{service?.text}</h3>
+              <p>{service?.description}</p>
+            </div>
+            <div className='service_section_right'>
+              <Image objectFit='cover' src={service?.imageSrc} alt='image' layout='fill' />
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   )

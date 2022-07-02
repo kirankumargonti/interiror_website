@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: $fontFamilyOne;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 img,
 picture,
